@@ -31,7 +31,7 @@ auto client = scio_beast::SocketClusterClient::create(clientOpts);
 // create a client socket
 auto socket = client->socket();
 
-socket->on<scio::beast::SCSocket::ConnectEvent>(
+socket->on<scio_beast::SCSocket::ConnectEvent>(
   [](const json& resp) {
     std::cout << "Connected!" << std::endl;
   }
